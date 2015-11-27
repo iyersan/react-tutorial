@@ -20,7 +20,7 @@ var CommentList = React.createClass({
       );
     });
     return (
-      <div className="CommentList">
+      <div className="commentList">
         {commentNodes}
       </div>
     );
@@ -62,6 +62,6 @@ var data = [
 ];
 
 ReactDOM.render(
-  <CommentBox data={data} />,
+  <CommentBox url= "/api/comments" />,
   document.getElementById('content')
 );
