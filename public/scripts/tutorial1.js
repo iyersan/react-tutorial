@@ -56,11 +56,6 @@ var Comment = React.createClass({
   }
 });
 
-var data = [
-  {id: 1, author: "John Doe", text: "This is one comment"},
-  {id: 2, author: "Jane Smith", text: "This is *another* comment"}
-];
-
 ReactDOM.render(
   <CommentBox url= "/api/comments" />,
   document.getElementById('content')
